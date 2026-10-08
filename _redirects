@@ -1,0 +1,8 @@
+# Cloudflare Pages — Redirects
+# Language routes → index.html (SPA-style)
+/ar  /index.html  200
+/en  /index.html  200
+/ru  /index.html  200
+/ar/ /index.html  200
+/en/ /index.html  200
+/ru/ /index.html  200
