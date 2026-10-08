@@ -1,7 +1,7 @@
 {
-  "_generated_by": "Al-Faida Build Script",
+  "_generated_by": "Al-Faida Apps Script",
   "schema": 2,
-  "version": "2026-10-08T14:57:01.911Z",
+  "version": "2026-10-08T19:26:08.884Z",
   "settings": {
     "brand_name": {
       "ar": "الفائدة",
@@ -13,16 +13,18 @@
       "en": "Russian Recipes • Made in Egypt",
       "ru": "Русские рецепты • Сделано в Египте"
     },
-    "logo_file": "https://drive.google.com/file/d/1OW514CcEpMw3sMovOZqygsCMQqO7o8M8/view?usp=",
-    "color_navy": "#0A192F",
-    "color_red": "#8B0000",
-    "color_gold": "#D4AF37",
-    "color_cream": "#F8F5F0",
-    "color_white": "#FFFFFF",
-    "phone_1": "01043460317",
-    "phone_2": "01043460319",
+    "since_year": "",
+    "logo_url": "https://lh3.googleusercontent.com/d/1OW514CcEpMw3sMovOZqygsCMQqO7o8M8",
+    "logo_file": "",
+    "phone": [
+      "01043460317",
+      "01043460319"
+    ],
+    "whatsapp": [
+      "201043460317",
+      "201043460319"
+    ],
     "whatsapp_1": "201043460317",
-    "whatsapp_2": "201043460319",
     "whatsapp_msg": {
       "ar": "مرحبًا، أريد الطلب من منيو الفائدة",
       "en": "Hello, I'd like to order from the Al-Faida menu",
@@ -44,19 +46,993 @@
       "en": "EGP",
       "ru": "EGP"
     },
-    "default_language": "ar",
-    "domain": "",
-    "meta_pixel_id": "1421468073411111",
-    "colors": {
-      "navy": "#0A192F",
-      "red": "#8B0000",
-      "gold": "#D4AF37",
-      "cream": "#F8F5F0",
-      "white": "#FFFFFF"
-    },
-    "logo_url": "assets/brand/logo.png",
-    "logo_drive_direct": "https://lh3.googleusercontent.com/d/1OW514CcEpMw3sMovOZqygsCMQqO7o8M8"
+    "default_language": "ar"
   },
+  "categories": [
+    {
+      "id": "c_smoked",
+      "name": {
+        "ar": "لحوم مدخنة",
+        "en": "Smoked meats",
+        "ru": "копчености"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1651orP8r_UMRjMh4lGLAaYL-ycWCbDZ8"
+    },
+    {
+      "id": "c_pieces",
+      "name": {
+        "ar": "قطع مدخنة",
+        "en": "Smoked Pieces",
+        "ru": "Копчёная ветчина"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1ollqWzwUK56kV-Xvj7xN8H8SMhbrFE4D"
+    },
+    {
+      "id": "c_salami",
+      "name": {
+        "ar": "سلامي مدخن",
+        "en": "Smoked Salami",
+        "ru": "Копчёные сервелаты"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1Cq6CvH-GafAtCXKVML7ExXm7J2Rn6xMP"
+    },
+    {
+      "id": "c_sausage",
+      "name": {
+        "ar": "سجق مدخن",
+        "en": "Smoked Sausages",
+        "ru": "Копчёные колбасы"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1XeWyeR-yYiZ-FMj1lkM3zglZ2PyR6sNT"
+    },
+    {
+      "id": "c_sausage Shish",
+      "name": {
+        "ar": "سجق مدخن شيش",
+        "en": "Smoked Shish Sausage",
+        "ru": "охотничьи колбаски"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1dcc2hGNV3hnjiBp243Tvcw7Bf_GNG3Rx"
+    },
+    {
+      "id": "c_hotdog",
+      "name": {
+        "ar": "سوسيس",
+        "en": "Hot Dogs",
+        "ru": "Сосиски"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1Poaxjuk7t-HCyKi2JolNuRaThEGVega2"
+    },
+    {
+      "id": "c_boiled_pieces",
+      "name": {
+        "ar": "قطع مسلوقة",
+        "en": "Boiled Pieces",
+        "ru": "Ветчина вареная"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1AJ2GaAhewlmbvmEsi0o1Ib-9xUMvlz9t"
+    },
+    {
+      "id": "c_franks",
+      "name": {
+        "ar": "نقانق مسلوق",
+        "en": "Boiled Franks",
+        "ru": "Варёные колбасы"
+      },
+      "image": "https://lh3.googleusercontent.com/d/19ESHAgBy2T37iRURhpB2xI34KmSDac0V"
+    },
+    {
+      "id": "c_fish",
+      "name": {
+        "ar": "الأسماك",
+        "en": "Fish",
+        "ru": "Рыба"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1v8yHL-M2sJNzTB6bCwYjvNTwRRbaV-Wx"
+    },
+    {
+      "id": "c_frozen",
+      "name": {
+        "ar": "المنتجات المجمدة",
+        "en": "Frozen Products",
+        "ru": "Замороженные продукты"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1CxT6d_-XpoVo9-KfDlgQHm5BO6xjNzJE"
+    }
+  ],
+  "items": [
+    {
+      "id": "i01",
+      "category_id": "c_pieces",
+      "name": {
+        "ar": "قطعة الفراخ المدخن",
+        "en": "Smoked Chicken Piece",
+        "ru": "\"Семейная\" ветчина куриная копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 590,
+      "price_half_kg": 295,
+      "price_quarter_kg": 148,
+      "old_price_per_kg": 649,
+      "image": "smoked-chicken-piece.webp",
+      "badge": "offer",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i05",
+      "category_id": "c_salami",
+      "name": {
+        "ar": "سلامي البقري المدخن",
+        "en": "Smoked Beef Salami",
+        "ru": "\"Восточный\" сервелат говяжий копченый"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 640,
+      "price_half_kg": 320,
+      "price_quarter_kg": 160,
+      "old_price_per_kg": null,
+      "image": "smoked-beef-salami.webp",
+      "badge": "new",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i10",
+      "category_id": "c_sausage",
+      "name": {
+        "ar": "سجق البقري المدخن",
+        "en": "Smoked Beef Sausage",
+        "ru": "\"Краковская\" колбаса говяжья копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 670,
+      "price_half_kg": 335,
+      "price_quarter_kg": 168,
+      "old_price_per_kg": null,
+      "image": "smoked-beef-sausage.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i13",
+      "category_id": "c_franks",
+      "name": {
+        "ar": "نقانق البقري مسلوق",
+        "en": "Boiled Beef Franks",
+        "ru": "\"Ферганская\" колбаса говяжья вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 620,
+      "price_half_kg": 310,
+      "price_quarter_kg": 155,
+      "old_price_per_kg": null,
+      "image": "boiled-beef-franks.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i18",
+      "category_id": "c_hotdog",
+      "name": {
+        "ar": "سوسيس الفراخ",
+        "en": "Chicken Hot Dog",
+        "ru": "\"Детские\" сосиски куриные"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 490,
+      "price_half_kg": 245,
+      "price_quarter_kg": 123,
+      "old_price_per_kg": null,
+      "image": "chicken-hot-dog.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i24",
+      "category_id": "c_boiled_pieces",
+      "name": {
+        "ar": "قطع بقري مسلوق",
+        "en": "Boiled Beef Pieces",
+        "ru": "\"бухарская\" ветчина говяжья вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 720,
+      "price_half_kg": 360,
+      "price_quarter_kg": 180,
+      "old_price_per_kg": null,
+      "image": "boiled-beef-pieces.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i30",
+      "category_id": "c_sausage Shish",
+      "name": {
+        "ar": "سجق بقري مدخن شيش",
+        "en": "Beef Sausage Mesh",
+        "ru": "\"шашлычные\"  говяжьи копченые"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 900,
+      "price_half_kg": 450,
+      "price_quarter_kg": 225,
+      "old_price_per_kg": null,
+      "image": "beef-sausage-mesh.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i02",
+      "category_id": "c_pieces",
+      "name": {
+        "ar": "قطعة رومي مدخن",
+        "en": "Smoked Turkey Piece",
+        "ru": "\"Чайная\" Ветчина индейки копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 650,
+      "price_half_kg": 325,
+      "price_quarter_kg": 163,
+      "old_price_per_kg": null,
+      "image": "smoked-turkey-piece.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i06",
+      "category_id": "c_salami",
+      "name": {
+        "ar": "سلامي رومي مدخن",
+        "en": "Smoked Turkey Salami",
+        "ru": "\"Турецкий\" сервелат индейки копченый"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 590,
+      "price_half_kg": 295,
+      "price_quarter_kg": 148,
+      "old_price_per_kg": null,
+      "image": "smoked-turkey-salami.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i11",
+      "category_id": "c_sausage",
+      "name": {
+        "ar": "سجق رومي مدخن",
+        "en": "Smoked Turkey Sausage",
+        "ru": "\"Казанская\" колбаса индейки копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 510,
+      "price_half_kg": 255,
+      "price_quarter_kg": 128,
+      "old_price_per_kg": null,
+      "image": "smoked-turkey-sausage.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i14",
+      "category_id": "c_franks",
+      "name": {
+        "ar": "نقانق الفراخ مسلوق",
+        "en": "Boiled Chicken Franks",
+        "ru": "\"Фермерская\" колбаса куриная вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 490,
+      "price_half_kg": 245,
+      "price_quarter_kg": 123,
+      "old_price_per_kg": null,
+      "image": "boiled-chicken-franks.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i19",
+      "category_id": "c_hotdog",
+      "name": {
+        "ar": "سوسيس الفراخ لبني",
+        "en": "Milky Chicken Hot Dog",
+        "ru": "\"Молочные\" сосиски куриные"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 480,
+      "price_half_kg": 240,
+      "price_quarter_kg": 120,
+      "old_price_per_kg": null,
+      "image": "milky-chicken-hot-dog.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i25",
+      "category_id": "c_boiled_pieces",
+      "name": {
+        "ar": "قطع فراخ مسلوق",
+        "en": "Boiled Chicken Pieces",
+        "ru": "\"Азиатская\" ветчина куриная вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 540,
+      "price_half_kg": 270,
+      "price_quarter_kg": 135,
+      "old_price_per_kg": null,
+      "image": "boiled-chicken-pieces.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i31",
+      "category_id": "c_sausage Shish",
+      "name": {
+        "ar": "سجق فراخ مدخن شيش",
+        "en": "Smoked Chicken Shish Sausage",
+        "ru": "походные куриные копченые"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 650,
+      "price_half_kg": 325,
+      "price_quarter_kg": 163,
+      "old_price_per_kg": null,
+      "image": "",
+      "badge": "popular",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i03",
+      "category_id": "c_pieces",
+      "name": {
+        "ar": "قطعة البقري المدخن",
+        "en": "Smoked Beef Piece",
+        "ru": "\"Башкирская\" ветчина говяжья копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 790,
+      "price_half_kg": 395,
+      "price_quarter_kg": 198,
+      "old_price_per_kg": 869,
+      "image": "smoked-beef-piece.webp",
+      "badge": "offer",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i07",
+      "category_id": "c_salami",
+      "name": {
+        "ar": "سلامي خروف مدخن",
+        "en": "Smoked Lamb Salami",
+        "ru": "\"Кавказский\" сервелат бараний копчёный"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 700,
+      "price_half_kg": 350,
+      "price_quarter_kg": 175,
+      "old_price_per_kg": null,
+      "image": "smoked-lamb-salami.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i12",
+      "category_id": "c_sausage",
+      "name": {
+        "ar": "سجق الفراخ المدخن",
+        "en": "Smoked Chicken Sausage",
+        "ru": "\"Уфимская\" колбаса куриная копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 510,
+      "price_half_kg": 255,
+      "price_quarter_kg": 128,
+      "old_price_per_kg": null,
+      "image": "smoked-chicken-sausage.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i15",
+      "category_id": "c_franks",
+      "name": {
+        "ar": "نقانق رومي مسلوق",
+        "en": "Boiled Turkey Franks",
+        "ru": "\"Пикантная\" Колбаса индейки вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 510,
+      "price_half_kg": 255,
+      "price_quarter_kg": 128,
+      "old_price_per_kg": null,
+      "image": "boiled-turkey-franks.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i20",
+      "category_id": "c_hotdog",
+      "name": {
+        "ar": "سوسيس رومي",
+        "en": "Turkey Hot Dog",
+        "ru": "\"Деликатные\" сосиски индейки"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 550,
+      "price_half_kg": 275,
+      "price_quarter_kg": 138,
+      "old_price_per_kg": null,
+      "image": "turkey-hot-dog.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i26",
+      "category_id": "c_boiled_pieces",
+      "name": {
+        "ar": "قطعه جملي مسلوق",
+        "en": "Boiled Camel Piece",
+        "ru": "\"Алматинская\" ветчина верблюжья вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 670,
+      "price_half_kg": 335,
+      "price_quarter_kg": 168,
+      "old_price_per_kg": null,
+      "image": "boiled-camel-piece.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i32",
+      "category_id": "c_sausage Shish",
+      "name": {
+        "ar": "سجق جملي مدخن شيش",
+        "en": "Smoked Camel Shish Sausage",
+        "ru": "султанские верблюжьи копченые"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 850,
+      "price_half_kg": 425,
+      "price_quarter_kg": 213,
+      "old_price_per_kg": null,
+      "image": "",
+      "badge": "new",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i04",
+      "category_id": "c_pieces",
+      "name": {
+        "ar": "قطعة الجمل المدخن",
+        "en": "Smoked Camel Piece",
+        "ru": "\"Арабская\" Ветчина верблюжья копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 690,
+      "price_half_kg": 345,
+      "price_quarter_kg": 173,
+      "old_price_per_kg": null,
+      "image": "smoked-camel-piece.webp",
+      "badge": "popular",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i08",
+      "category_id": "c_salami",
+      "name": {
+        "ar": "سلامي الفراخ المدخن",
+        "en": "Smoked Chicken Salami",
+        "ru": "\"Андижанский\" сервелат куриный копченый"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 550,
+      "price_half_kg": 275,
+      "price_quarter_kg": 138,
+      "old_price_per_kg": null,
+      "image": "smoked-chicken-salami.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i16",
+      "category_id": "c_franks",
+      "name": {
+        "ar": "لانشون فراخ",
+        "en": "Chicken Luncheon",
+        "ru": "\"столовая\" колбаса куриная вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 470,
+      "price_half_kg": 235,
+      "price_quarter_kg": 118,
+      "old_price_per_kg": null,
+      "image": "chicken-luncheon.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i21",
+      "category_id": "c_hotdog",
+      "name": {
+        "ar": "سوسيس البقري",
+        "en": "Beef Hot Dog",
+        "ru": "\"Мясные\" сосиски говяжьи"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 590,
+      "price_half_kg": 295,
+      "price_quarter_kg": 148,
+      "old_price_per_kg": null,
+      "image": "beef-hot-dog.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i27",
+      "category_id": "c_boiled_pieces",
+      "name": {
+        "ar": "قطع رومي مسلوق",
+        "en": "Boiled Turkey Pieces",
+        "ru": "\"татарская\" ветчина индейки вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 590,
+      "price_half_kg": 295,
+      "price_quarter_kg": 148,
+      "old_price_per_kg": null,
+      "image": "boiled-turkey-pieces.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i33",
+      "category_id": "c_sausage Shish",
+      "name": {
+        "ar": "سجق رومي مدخن شيش",
+        "en": "Smoked Turkey Shish Sausage",
+        "ru": "караванные индейки копченые"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 760,
+      "price_half_kg": 380,
+      "price_quarter_kg": 190,
+      "old_price_per_kg": null,
+      "image": "",
+      "badge": "new",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i09",
+      "category_id": "c_salami",
+      "name": {
+        "ar": "سلامي الجمل المدخن",
+        "en": "Smoked Camel Salami",
+        "ru": "\"Казахский\" сервелат верблюжий копченый"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 590,
+      "price_half_kg": 295,
+      "price_quarter_kg": 148,
+      "old_price_per_kg": null,
+      "image": "smoked-camel-salami.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i17",
+      "category_id": "c_franks",
+      "name": {
+        "ar": "لانشون بقري",
+        "en": "Beef Luncheon",
+        "ru": "\"албанская\" колбаса говяжья вареная"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 590,
+      "price_half_kg": 295,
+      "price_quarter_kg": 148,
+      "old_price_per_kg": null,
+      "image": "beef-luncheon.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i22",
+      "category_id": "c_smoked",
+      "name": {
+        "ar": "صدور فراخ مدخن",
+        "en": "Smoked Chicken Breast",
+        "ru": "куриная грудка копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 580,
+      "price_half_kg": 290,
+      "price_quarter_kg": 145,
+      "old_price_per_kg": null,
+      "image": "smoked-chicken-breast.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i23",
+      "category_id": "c_smoked",
+      "name": {
+        "ar": "دبوس ديك رومي",
+        "en": "Smoked Turkey Drumstick",
+        "ru": "голень индейки копченая"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 590,
+      "price_half_kg": 295,
+      "price_quarter_kg": 148,
+      "old_price_per_kg": null,
+      "image": "smoked-turkey-drumstick.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i28",
+      "category_id": "c_fish",
+      "name": {
+        "ar": "سلامي سمك",
+        "en": "Fish Salami",
+        "ru": "сервелат рыбный копченый"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 530,
+      "price_half_kg": 265,
+      "price_quarter_kg": 133,
+      "old_price_per_kg": null,
+      "image": "fish-salami.webp",
+      "badge": "new",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i29",
+      "category_id": "c_pieces",
+      "name": {
+        "ar": "لية خروف مدخنة",
+        "en": "Smoked Lamb Fat",
+        "ru": "курдюк бараний копченый"
+      },
+      "desc": {
+        "ar": "",
+        "en": "",
+        "ru": ""
+      },
+      "price_per_kg": 690,
+      "price_half_kg": 345,
+      "price_quarter_kg": 173,
+      "old_price_per_kg": null,
+      "image": "smoked-lamb-fat.webp",
+      "badge": "",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    }
+  ],
   "ui": {
     "nav_menu": {
       "ar": "المنيو",
@@ -320,8 +1296,7 @@
       },
       "url": "https://www.facebook.com/alfaida.foods",
       "icon": "facebook",
-      "featured": true,
-      "order": 1
+      "featured": true
     },
     {
       "id": "facebook_group",
@@ -333,8 +1308,7 @@
       },
       "url": "https://www.facebook.com/groups/1810885239791823",
       "icon": "users",
-      "featured": true,
-      "order": 2
+      "featured": true
     },
     {
       "id": "instagram",
@@ -346,8 +1320,7 @@
       },
       "url": "https://www.instagram.com/alfaida.foods",
       "icon": "instagram",
-      "featured": true,
-      "order": 3
+      "featured": true
     },
     {
       "id": "threads",
@@ -359,8 +1332,7 @@
       },
       "url": "https://www.threads.com/@alfaida.foods",
       "icon": "threads",
-      "featured": true,
-      "order": 4
+      "featured": true
     },
     {
       "id": "location",
@@ -372,8 +1344,7 @@
       },
       "url": "https://maps.app.goo.gl/Z87ypXnpPKf3V7Y49",
       "icon": "map-pin",
-      "featured": true,
-      "order": 5
+      "featured": true
     },
     {
       "id": "wa_business_1",
@@ -385,8 +1356,7 @@
       },
       "url": "https://wa.me/201043460317",
       "icon": "whatsapp",
-      "featured": true,
-      "order": 6
+      "featured": true
     },
     {
       "id": "wa_business_2",
@@ -398,8 +1368,7 @@
       },
       "url": "https://wa.me/201043460319",
       "icon": "whatsapp",
-      "featured": false,
-      "order": 7
+      "featured": false
     },
     {
       "id": "wa_groups",
@@ -411,8 +1380,7 @@
       },
       "url": "",
       "icon": "whatsapp groups",
-      "featured": true,
-      "order": 8
+      "featured": true
     },
     {
       "id": "wa_community",
@@ -424,8 +1392,19 @@
       },
       "url": "https://whatsapp.com/channel/0029VbEHHV0FXUuRfiHAc809",
       "icon": "whatsapp community",
-      "featured": true,
-      "order": 9
+      "featured": true
+    },
+    {
+      "id": "x",
+      "type": "follow us",
+      "name": {
+        "ar": "X (تويتر)",
+        "en": "X (Twitter)",
+        "ru": "X (Twitter)"
+      },
+      "url": "",
+      "icon": "x",
+      "featured": false
     },
     {
       "id": "tiktok",
@@ -437,8 +1416,7 @@
       },
       "url": "https://www.tiktok.com/@alfaida.foods",
       "icon": "tiktok",
-      "featured": true,
-      "order": 11
+      "featured": true
     },
     {
       "id": "telegram",
@@ -450,8 +1428,7 @@
       },
       "url": "https://t.me/al_faida_misr/12",
       "icon": "telegram channels",
-      "featured": true,
-      "order": 12
+      "featured": true
     },
     {
       "id": "linkedin",
@@ -463,8 +1440,7 @@
       },
       "url": "https://www.linkedin.com/company/alfaidafoods/",
       "icon": "linkedin",
-      "featured": true,
-      "order": 13
+      "featured": true
     },
     {
       "id": "youtube",
@@ -476,1086 +1452,7 @@
       },
       "url": "https://www.youtube.com/channel/UC0Aw7MrlqN38mF7EY7bybRg",
       "icon": "youtube",
-      "featured": true,
-      "order": 14
-    }
-  ],
-  "categories": [
-    {
-      "id": "c_smoked",
-      "name": {
-        "ar": "لحوم مدخنة",
-        "en": "Smoked meats",
-        "ru": "копчености"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1651orP8r_UMRjMh4lGLAaYL-ycWCbDZ8",
-      "order": 1
-    },
-    {
-      "id": "c_pieces",
-      "name": {
-        "ar": "قطع مدخنة",
-        "en": "Smoked Pieces",
-        "ru": "Копчёная ветчина"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1ollqWzwUK56kV-Xvj7xN8H8SMhbrFE4D",
-      "order": 2
-    },
-    {
-      "id": "c_salami",
-      "name": {
-        "ar": "سلامي مدخن",
-        "en": "Smoked Salami",
-        "ru": "Копчёные сервелаты"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1Cq6CvH-GafAtCXKVML7ExXm7J2Rn6xMP",
-      "order": 3
-    },
-    {
-      "id": "c_sausage",
-      "name": {
-        "ar": "سجق مدخن",
-        "en": "Smoked Sausages",
-        "ru": "Копчёные колбасы"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1XeWyeR-yYiZ-FMj1lkM3zglZ2PyR6sNT",
-      "order": 4
-    },
-    {
-      "id": "c_sausage Shish",
-      "name": {
-        "ar": "سجق مدخن شيش",
-        "en": "Smoked Shish Sausage",
-        "ru": "охотничьи колбаски"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1dcc2hGNV3hnjiBp243Tvcw7Bf_GNG3Rx",
-      "order": 5
-    },
-    {
-      "id": "c_hotdog",
-      "name": {
-        "ar": "سوسيس",
-        "en": "Hot Dogs",
-        "ru": "Сосиски"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1Poaxjuk7t-HCyKi2JolNuRaThEGVega2",
-      "order": 6
-    },
-    {
-      "id": "c_boiled_pieces",
-      "name": {
-        "ar": "قطع مسلوقة",
-        "en": "Boiled Pieces",
-        "ru": "Ветчина вареная"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1AJ2GaAhewlmbvmEsi0o1Ib-9xUMvlz9t",
-      "order": 7
-    },
-    {
-      "id": "c_franks",
-      "name": {
-        "ar": "نقانق مسلوق",
-        "en": "Boiled Franks",
-        "ru": "Варёные колбасы"
-      },
-      "image": "https://lh3.googleusercontent.com/d/19ESHAgBy2T37iRURhpB2xI34KmSDac0V",
-      "order": 8
-    },
-    {
-      "id": "c_fish",
-      "name": {
-        "ar": "الأسماك",
-        "en": "Fish",
-        "ru": "Рыба"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1v8yHL-M2sJNzTB6bCwYjvNTwRRbaV-Wx",
-      "order": 9
-    },
-    {
-      "id": "c_frozen",
-      "name": {
-        "ar": "المنتجات المجمدة",
-        "en": "Frozen Products",
-        "ru": "Замороженные продукты"
-      },
-      "image": "https://lh3.googleusercontent.com/d/1CxT6d_-XpoVo9-KfDlgQHm5BO6xjNzJE",
-      "order": 10
-    }
-  ],
-  "items": [
-    {
-      "id": "i01",
-      "category_id": "c_pieces",
-      "name": {
-        "ar": "قطعة الفراخ المدخن",
-        "en": "Smoked Chicken Piece",
-        "ru": "\"Семейная\" ветчина куриная копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 590,
-      "price_half_kg": 295,
-      "price_quarter_kg": 148,
-      "old_price_per_kg": 649,
-      "image": "smoked-chicken-piece.webp",
-      "badge": "offer",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 1
-    },
-    {
-      "id": "i05",
-      "category_id": "c_salami",
-      "name": {
-        "ar": "سلامي البقري المدخن",
-        "en": "Smoked Beef Salami",
-        "ru": "\"Восточный\" сервелат говяжий копченый"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 640,
-      "price_half_kg": 320,
-      "price_quarter_kg": 160,
-      "old_price_per_kg": null,
-      "image": "smoked-beef-salami.webp",
-      "badge": "new",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 1
-    },
-    {
-      "id": "i10",
-      "category_id": "c_sausage",
-      "name": {
-        "ar": "سجق البقري المدخن",
-        "en": "Smoked Beef Sausage",
-        "ru": "\"Краковская\" колбаса говяжья копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 670,
-      "price_half_kg": 335,
-      "price_quarter_kg": 168,
-      "old_price_per_kg": null,
-      "image": "smoked-beef-sausage.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 1
-    },
-    {
-      "id": "i13",
-      "category_id": "c_franks",
-      "name": {
-        "ar": "نقانق البقري مسلوق",
-        "en": "Boiled Beef Franks",
-        "ru": "\"Ферганская\" колбаса говяжья вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 620,
-      "price_half_kg": 310,
-      "price_quarter_kg": 155,
-      "old_price_per_kg": null,
-      "image": "boiled-beef-franks.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 1
-    },
-    {
-      "id": "i18",
-      "category_id": "c_hotdog",
-      "name": {
-        "ar": "سوسيس الفراخ",
-        "en": "Chicken Hot Dog",
-        "ru": "\"Детские\" сосиски куриные"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 490,
-      "price_half_kg": 245,
-      "price_quarter_kg": 123,
-      "old_price_per_kg": null,
-      "image": "chicken-hot-dog.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 1
-    },
-    {
-      "id": "i24",
-      "category_id": "c_boiled_pieces",
-      "name": {
-        "ar": "قطع بقري مسلوق",
-        "en": "Boiled Beef Pieces",
-        "ru": "\"бухарская\" ветчина говяжья вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 720,
-      "price_half_kg": 360,
-      "price_quarter_kg": 180,
-      "old_price_per_kg": null,
-      "image": "boiled-beef-pieces.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 1
-    },
-    {
-      "id": "i30",
-      "category_id": "c_sausage Shish",
-      "name": {
-        "ar": "سجق بقري مدخن شيش",
-        "en": "Beef Sausage Mesh",
-        "ru": "\"шашлычные\"  говяжьи копченые"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 900,
-      "price_half_kg": 450,
-      "price_quarter_kg": 225,
-      "old_price_per_kg": null,
-      "image": "beef-sausage-mesh.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 1
-    },
-    {
-      "id": "i02",
-      "category_id": "c_pieces",
-      "name": {
-        "ar": "قطعة رومي مدخن",
-        "en": "Smoked Turkey Piece",
-        "ru": "\"Чайная\" Ветчина индейки копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 650,
-      "price_half_kg": 325,
-      "price_quarter_kg": 163,
-      "old_price_per_kg": null,
-      "image": "smoked-turkey-piece.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 2
-    },
-    {
-      "id": "i06",
-      "category_id": "c_salami",
-      "name": {
-        "ar": "سلامي رومي مدخن",
-        "en": "Smoked Turkey Salami",
-        "ru": "\"Турецкий\" сервелат индейки копченый"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 590,
-      "price_half_kg": 295,
-      "price_quarter_kg": 148,
-      "old_price_per_kg": null,
-      "image": "smoked-turkey-salami.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 2
-    },
-    {
-      "id": "i11",
-      "category_id": "c_sausage",
-      "name": {
-        "ar": "سجق رومي مدخن",
-        "en": "Smoked Turkey Sausage",
-        "ru": "\"Казанская\" колбаса индейки копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 510,
-      "price_half_kg": 255,
-      "price_quarter_kg": 128,
-      "old_price_per_kg": null,
-      "image": "smoked-turkey-sausage.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 2
-    },
-    {
-      "id": "i14",
-      "category_id": "c_franks",
-      "name": {
-        "ar": "نقانق الفراخ مسلوق",
-        "en": "Boiled Chicken Franks",
-        "ru": "\"Фермерская\" колбаса куриная вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 490,
-      "price_half_kg": 245,
-      "price_quarter_kg": 123,
-      "old_price_per_kg": null,
-      "image": "boiled-chicken-franks.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 2
-    },
-    {
-      "id": "i19",
-      "category_id": "c_hotdog",
-      "name": {
-        "ar": "سوسيس الفراخ لبني",
-        "en": "Milky Chicken Hot Dog",
-        "ru": "\"Молочные\" сосиски куриные"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 480,
-      "price_half_kg": 240,
-      "price_quarter_kg": 120,
-      "old_price_per_kg": null,
-      "image": "milky-chicken-hot-dog.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 2
-    },
-    {
-      "id": "i25",
-      "category_id": "c_boiled_pieces",
-      "name": {
-        "ar": "قطع فراخ مسلوق",
-        "en": "Boiled Chicken Pieces",
-        "ru": "\"Азиатская\" ветчина куриная вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 540,
-      "price_half_kg": 270,
-      "price_quarter_kg": 135,
-      "old_price_per_kg": null,
-      "image": "boiled-chicken-pieces.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 2
-    },
-    {
-      "id": "i31",
-      "category_id": "c_sausage Shish",
-      "name": {
-        "ar": "سجق فراخ مدخن شيش",
-        "en": "Smoked Chicken Shish Sausage",
-        "ru": "походные куриные копченые"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 650,
-      "price_half_kg": 325,
-      "price_quarter_kg": 163,
-      "old_price_per_kg": null,
-      "image": "",
-      "badge": "popular",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 2
-    },
-    {
-      "id": "i03",
-      "category_id": "c_pieces",
-      "name": {
-        "ar": "قطعة البقري المدخن",
-        "en": "Smoked Beef Piece",
-        "ru": "\"Башкирская\" ветчина говяжья копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 790,
-      "price_half_kg": 395,
-      "price_quarter_kg": 198,
-      "old_price_per_kg": 869,
-      "image": "smoked-beef-piece.webp",
-      "badge": "offer",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 3
-    },
-    {
-      "id": "i07",
-      "category_id": "c_salami",
-      "name": {
-        "ar": "سلامي خروف مدخن",
-        "en": "Smoked Lamb Salami",
-        "ru": "\"Кавказский\" сервелат бараний копчёный"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 700,
-      "price_half_kg": 350,
-      "price_quarter_kg": 175,
-      "old_price_per_kg": null,
-      "image": "smoked-lamb-salami.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 3
-    },
-    {
-      "id": "i12",
-      "category_id": "c_sausage",
-      "name": {
-        "ar": "سجق الفراخ المدخن",
-        "en": "Smoked Chicken Sausage",
-        "ru": "\"Уфимская\" колбаса куриная копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 510,
-      "price_half_kg": 255,
-      "price_quarter_kg": 128,
-      "old_price_per_kg": null,
-      "image": "smoked-chicken-sausage.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 3
-    },
-    {
-      "id": "i15",
-      "category_id": "c_franks",
-      "name": {
-        "ar": "نقانق رومي مسلوق",
-        "en": "Boiled Turkey Franks",
-        "ru": "\"Пикантная\" Колбаса индейки вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 510,
-      "price_half_kg": 255,
-      "price_quarter_kg": 128,
-      "old_price_per_kg": null,
-      "image": "boiled-turkey-franks.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 3
-    },
-    {
-      "id": "i20",
-      "category_id": "c_hotdog",
-      "name": {
-        "ar": "سوسيس رومي",
-        "en": "Turkey Hot Dog",
-        "ru": "\"Деликатные\" сосиски индейки"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 550,
-      "price_half_kg": 275,
-      "price_quarter_kg": 138,
-      "old_price_per_kg": null,
-      "image": "turkey-hot-dog.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 3
-    },
-    {
-      "id": "i26",
-      "category_id": "c_boiled_pieces",
-      "name": {
-        "ar": "قطعه جملي مسلوق",
-        "en": "Boiled Camel Piece",
-        "ru": "\"Алматинская\" ветчина верблюжья вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 670,
-      "price_half_kg": 335,
-      "price_quarter_kg": 168,
-      "old_price_per_kg": null,
-      "image": "boiled-camel-piece.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 3
-    },
-    {
-      "id": "i32",
-      "category_id": "c_sausage Shish",
-      "name": {
-        "ar": "سجق جملي مدخن شيش",
-        "en": "Smoked Camel Shish Sausage",
-        "ru": "султанские верблюжьи копченые"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 850,
-      "price_half_kg": 425,
-      "price_quarter_kg": 213,
-      "old_price_per_kg": null,
-      "image": "",
-      "badge": "new",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 3
-    },
-    {
-      "id": "i04",
-      "category_id": "c_pieces",
-      "name": {
-        "ar": "قطعة الجمل المدخن",
-        "en": "Smoked Camel Piece",
-        "ru": "\"Арабская\" Ветчина верблюжья копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 690,
-      "price_half_kg": 345,
-      "price_quarter_kg": 173,
-      "old_price_per_kg": null,
-      "image": "smoked-camel-piece.webp",
-      "badge": "popular",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 4
-    },
-    {
-      "id": "i08",
-      "category_id": "c_salami",
-      "name": {
-        "ar": "سلامي الفراخ المدخن",
-        "en": "Smoked Chicken Salami",
-        "ru": "\"Андижанский\" сервелат куриный копченый"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 550,
-      "price_half_kg": 275,
-      "price_quarter_kg": 138,
-      "old_price_per_kg": null,
-      "image": "smoked-chicken-salami.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 4
-    },
-    {
-      "id": "i16",
-      "category_id": "c_franks",
-      "name": {
-        "ar": "لانشون فراخ",
-        "en": "Chicken Luncheon",
-        "ru": "\"столовая\" колбаса куриная вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 470,
-      "price_half_kg": 235,
-      "price_quarter_kg": 118,
-      "old_price_per_kg": null,
-      "image": "chicken-luncheon.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 4
-    },
-    {
-      "id": "i21",
-      "category_id": "c_hotdog",
-      "name": {
-        "ar": "سوسيس البقري",
-        "en": "Beef Hot Dog",
-        "ru": "\"Мясные\" сосиски говяжьи"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 590,
-      "price_half_kg": 295,
-      "price_quarter_kg": 148,
-      "old_price_per_kg": null,
-      "image": "beef-hot-dog.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 4
-    },
-    {
-      "id": "i27",
-      "category_id": "c_boiled_pieces",
-      "name": {
-        "ar": "قطع رومي مسلوق",
-        "en": "Boiled Turkey Pieces",
-        "ru": "\"татарская\" ветчина индейки вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 590,
-      "price_half_kg": 295,
-      "price_quarter_kg": 148,
-      "old_price_per_kg": null,
-      "image": "boiled-turkey-pieces.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 4
-    },
-    {
-      "id": "i33",
-      "category_id": "c_sausage Shish",
-      "name": {
-        "ar": "سجق رومي مدخن شيش",
-        "en": "Smoked Turkey Shish Sausage",
-        "ru": "караванные индейки копченые"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 760,
-      "price_half_kg": 380,
-      "price_quarter_kg": 190,
-      "old_price_per_kg": null,
-      "image": "",
-      "badge": "new",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 4
-    },
-    {
-      "id": "i09",
-      "category_id": "c_salami",
-      "name": {
-        "ar": "سلامي الجمل المدخن",
-        "en": "Smoked Camel Salami",
-        "ru": "\"Казахский\" сервелат верблюжий копченый"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 590,
-      "price_half_kg": 295,
-      "price_quarter_kg": 148,
-      "old_price_per_kg": null,
-      "image": "smoked-camel-salami.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 5
-    },
-    {
-      "id": "i17",
-      "category_id": "c_franks",
-      "name": {
-        "ar": "لانشون بقري",
-        "en": "Beef Luncheon",
-        "ru": "\"албанская\" колбаса говяжья вареная"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 590,
-      "price_half_kg": 295,
-      "price_quarter_kg": 148,
-      "old_price_per_kg": null,
-      "image": "beef-luncheon.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 5
-    },
-    {
-      "id": "i22",
-      "category_id": "c_smoked",
-      "name": {
-        "ar": "صدور فراخ مدخن",
-        "en": "Smoked Chicken Breast",
-        "ru": "куриная грудка копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 580,
-      "price_half_kg": 290,
-      "price_quarter_kg": 145,
-      "old_price_per_kg": null,
-      "image": "smoked-chicken-breast.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 5
-    },
-    {
-      "id": "i23",
-      "category_id": "c_smoked",
-      "name": {
-        "ar": "دبوس ديك رومي",
-        "en": "Smoked Turkey Drumstick",
-        "ru": "голень индейки копченая"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 590,
-      "price_half_kg": 295,
-      "price_quarter_kg": 148,
-      "old_price_per_kg": null,
-      "image": "smoked-turkey-drumstick.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 6
-    },
-    {
-      "id": "i28",
-      "category_id": "c_fish",
-      "name": {
-        "ar": "سلامي سمك",
-        "en": "Fish Salami",
-        "ru": "сервелат рыбный копченый"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 530,
-      "price_half_kg": 265,
-      "price_quarter_kg": 133,
-      "old_price_per_kg": null,
-      "image": "fish-salami.webp",
-      "badge": "new",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 6
-    },
-    {
-      "id": "i29",
-      "category_id": "c_pieces",
-      "name": {
-        "ar": "لية خروف مدخنة",
-        "en": "Smoked Lamb Fat",
-        "ru": "курдюк бараний копченый"
-      },
-      "desc": {
-        "ar": "",
-        "en": "",
-        "ru": ""
-      },
-      "price_per_kg": 690,
-      "price_half_kg": 345,
-      "price_quarter_kg": 173,
-      "old_price_per_kg": null,
-      "image": "smoked-lamb-fat.webp",
-      "badge": "",
-      "available": true,
-      "tags": {
-        "halal": true,
-        "natural": true,
-        "soy_free": true,
-        "keto": true
-      },
-      "order": 7
-    }
-  ],
-  "partners": [
-    {
-      "id": "p_seoudi",
-      "name": {
-        "ar": "سوبرماركت سعودي",
-        "en": "Seoudi Supermarket",
-        "ru": "Сеуди Супермаркет"
-      },
-      "logo": "https://play-lh.googleusercontent.com/zJPI-hJjslrAQcjmT5C0eVE5aqnlLUJ-Sl4CvX_nZ53AckDIJfrLyHMemcZkRUTXGAhcDFl8DmmXqIVXas5j",
-      "branches": {
-        "ar": "فروع القاهرة والجيزة",
-        "en": "فروع القاهرة والجيزة",
-        "ru": "فروع القاهرة والجيزة"
-      },
-      "url": "https://seoudi.com",
-      "order": 1
-    },
-    {
-      "id": "p_metro",
-      "name": {
-        "ar": "مترو ماركت",
-        "en": "Metro Market",
-        "ru": "Метро Маркет"
-      },
-      "logo": "https://bashaier.com.eg/storage/company/image/W6JJvOHlOs64uYRfYe3xfxHNOCjohGFKfgdxqUr8.png",
-      "branches": {
-        "ar": "مدينة نصر ومصر الجديدة",
-        "en": "مدينة نصر ومصر الجديدة",
-        "ru": "مدينة نصر ومصر الجديدة"
-      },
-      "url": "",
-      "order": 2
-    },
-    {
-      "id": "p_oscar",
-      "name": {
-        "ar": "أوسكار جراند ماركت",
-        "en": "Oscar Grand Market",
-        "ru": "Оскар Маркет"
-      },
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHdyomFc64rVCCZk2YsojwijK8smvbyiinFbbbu1qKiU08epzT6UTgKlA&s=10",
-      "branches": {
-        "ar": "التجمع والمعادي",
-        "en": "التجمع والمعادي",
-        "ru": "التجمع والمعادي"
-      },
-      "url": "",
-      "order": 3
+      "featured": true
     }
   ]
 }
