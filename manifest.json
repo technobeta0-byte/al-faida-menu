@@ -1,0 +1,19 @@
+{
+  "name": "الفائدة | Al-Faida",
+  "short_name": "الفائدة",
+  "description": "منيو الفائدة — لحوم مدخنة فاخرة بوصفات روسية أصيلة",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060d1b",
+  "theme_color": "#060d1b",
+  "lang": "ar",
+  "dir": "rtl",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "categories": ["food", "shopping"],
+  "screenshots": []
+}

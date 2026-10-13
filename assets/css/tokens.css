@@ -1,0 +1,142 @@
+/* ═══════════════════════════════════════════════════════════════
+   tokens.css — Al-Faida design tokens (Dark + Light themes)
+   Fonts are loaded via <link> in index.html (faster than @import).
+═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Typography ────────────────────────────────── */
+  --font-ar:      'Cairo','Segoe UI',Tahoma,system-ui,sans-serif;
+  --font-head:    'Playfair Display',Georgia,serif;
+  --font-body:    'Montserrat','Segoe UI',sans-serif;
+  --font-heritage:'Old Standard TT','Playfair Display',Georgia,serif;
+
+  /* ── Motion ────────────────────────────────────── */
+  --ease-stamp: cubic-bezier(0.23, 1.5, 0.32, 1);
+  --ease-ink:   cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   DARK — smoked butcher-block
+══════════════════════════════════════════════════════════════ */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg-color:   #342216;
+  --bg-image:   linear-gradient(rgba(52,34,22,.65), rgba(42,27,18,.75)), url('/images/bg-wood.jpg');
+  --sheet-bg:   rgba(42,28,18,.50);
+  --sheet-line: rgba(233,185,73,.22);
+
+  /* Category card — darker than background, burnt paper edges */
+  --card-bg:     #140c07;
+  --card-tex:    rgba(255,220,170,.035);
+  --card-scorch: inset 0 0 0 1px rgba(170,95,35,.38),
+                 inset 0 0 18px 4px rgba(0,0,0,.9),
+                 inset 0 0 46px 10px rgba(110,45,10,.28);
+
+  --text:   #F6EEDC;
+  --text-2: rgba(246,238,220,.84);
+  --text-3: rgba(246,238,220,.62);
+  --line:   rgba(233,185,73,.28);
+
+  --accent:  #E9B949;  /* headings */
+  --accent-2:#C9962E;
+  --price:   #FFB547;
+  --danger:  #E0563F;
+
+  /* Sticky category strip (light surface → dark ink) */
+  --strip-bg:        rgba(250,244,232,.97);
+  --strip-border:    rgba(160,110,40,.45);
+  --strip-text:      #2B1A0E;
+  --strip-hover-bg:  rgba(122,30,18,.08);
+  --strip-active-bg: #7A1E12;
+  --strip-active-tx: #FFF8EA;
+
+  /* Feature icons */
+  --feat-icon-bg: linear-gradient(145deg, #E9B949, #B07F22);
+  --feat-icon-fg: #1B110A;
+  --feat-label:   #F6EEDC;
+
+  /* Social */
+  --soc-bg:     rgba(20,12,7,.85);
+  --soc-border: rgba(233,185,73,.45);
+  --soc-fg:     #F6EEDC;
+  --soc-hover-bg: #E9B949;
+  --soc-hover-fg: #1B110A;
+
+  /* B2B */
+  --b2b-bg:    linear-gradient(135deg, #2a170c 0%, #160d07 100%);
+  --b2b-title: #E9B949;
+  --b2b-text:  #F6EEDC;
+  --btn-bg:    #A3281A;
+  --btn-fg:    #FFF8EA;
+
+  --input-bg:     rgba(250,244,232,.95);
+  --input-fg:     #2B1A0E;
+  --input-border: rgba(160,110,40,.5);
+
+  --logo-glow: drop-shadow(0 0 10px rgba(255,140,40,.55));
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LIGHT — old Russian heritage paper
+══════════════════════════════════════════════════════════════ */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg-color:   #E6D6B5;
+  --bg-image:   radial-gradient(ellipse 120% 80% at 50% 0%, rgba(255,250,235,.55), transparent 70%),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%238E1B12' fill-opacity='.07'%3E%3Cpath d='M24 4l6 6-6 6-6-6zM24 32l6 6-6 6-6-6zM4 24l6-6 6 6-6 6zM32 24l6-6 6 6-6 6z'/%3E%3C/g%3E%3C/svg%3E");
+  --sheet-bg:   #F3E7CC;
+  --sheet-line: rgba(142,27,18,.45);
+
+  --card-bg:     #EADBB8;
+  --card-tex:    rgba(120,70,20,.05);
+  --card-scorch: inset 0 0 0 1px rgba(120,70,25,.35),
+                 inset 0 0 16px 3px rgba(110,62,20,.38),
+                 inset 0 0 44px 8px rgba(150,95,40,.18);
+
+  --text:   #2A1C12;
+  --text-2: rgba(42,28,18,.84);
+  --text-3: rgba(42,28,18,.62);
+  --line:   rgba(142,27,18,.30);
+
+  --accent:  #8E1B12;
+  --accent-2:#A87C24;
+  --price:   #8E1B12;
+  --danger:  #8E1B12;
+
+  --strip-bg:        rgba(243,231,204,.97);
+  --strip-border:    rgba(142,27,18,.45);
+  --strip-text:      #2A1C12;
+  --strip-hover-bg:  rgba(142,27,18,.08);
+  --strip-active-bg: #8E1B12;
+  --strip-active-tx: #FFF6E0;
+
+  --feat-icon-bg: linear-gradient(145deg, #A3281A, #6E140C);
+  --feat-icon-fg: #F8E9C6;
+  --feat-label:   #2A1C12;
+
+  --soc-bg:     #F8EED8;
+  --soc-border: rgba(142,27,18,.45);
+  --soc-fg:     #2A1C12;
+  --soc-hover-bg: #8E1B12;
+  --soc-hover-fg: #FFF6E0;
+
+  --b2b-bg:    linear-gradient(135deg, #8E1B12 0%, #5E0F09 100%);
+  --b2b-title: #F5D58A;
+  --b2b-text:  #FFF6E0;
+  --btn-bg:    #F5D58A;
+  --btn-fg:    #3A1208;
+
+  --input-bg:     #FBF4E3;
+  --input-fg:     #2A1C12;
+  --input-border: rgba(142,27,18,.4);
+
+  --logo-glow: drop-shadow(0 2px 6px rgba(80,40,10,.25));
+}
+
+[lang="ar"]             { --font-base:var(--font-ar);   --font-title:var(--font-ar);   }
+[lang="en"],[lang="ru"] { --font-base:var(--font-body); --font-title:var(--font-head); }
+[data-theme="light"][lang="en"],
+[data-theme="light"][lang="ru"] { --font-title:var(--font-heritage); }

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الفائدة — لحوم مدخنة فاخرة بوصفات روسية أصيلة، صُنعت في مصر. حلال، طبيعي 100%، بدون صويا.">
+  <meta name="theme-color" content="#24170f">
+  <script>
+    (function () {
+      var t = 'dark';
+      try { t = localStorage.getItem('alfaida-theme') || 'dark'; } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="الفائدة | Al-Faida">
+  <meta property="og:description" content="وصفات روسية · صُنعت في مصر · حلال">
+  <meta property="og:type"        content="website">
+  <meta property="og:locale"      content="ar_EG">
+
+  <title>الفائدة | Al-Faida</title>
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <link rel="apple-touch-icon" href="./images/logo.png">
+  <link rel="preload" as="image" href="./assets/brand/logo.png" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&family=Old+Standard+TT:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+
+  <!-- PWA -->
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1421468073411111');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1421468073411111&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+  <!-- Loading -->
+  <div id="loading">
+    <img class="loading-logo" src="./assets/brand/logo.png" alt="الفائدة" width="140" height="140" fetchpriority="high">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- App -->
+  <div id="app">
+    <div id="content" class="paper-sheet" style="display:none;">
+
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M11 1h2v3h-2zM11 20h2v3h-2zM1 11h3v2H1zM20 11h3v2h-3zM4.2 2.8l2.1 2.1-1.4 1.4-2.1-2.1zM17.7 16.3l2.1 2.1-1.4 1.4-2.1-2.1zM2.8 19.8l2.1-2.1 1.4 1.4-2.1 2.1zM16.3 6.3l2.1-2.1 1.4 1.4-2.1 2.1z"/></svg>
+      </button>
+
+      <!-- Masthead -->
+      <header class="masthead">
+        <div id="logo-area"></div>
+        <div class="masthead-tagline" id="tagline"></div>
+        <div><span class="since-badge" id="since-badge"></span></div>
+        <div class="header-actions">
+          <nav class="lang-switcher" id="lang-switcher" aria-label="Language">
+            <a href="#" data-lang="ar">AR</a>
+            <a href="#" data-lang="en">EN</a>
+            <a href="#" data-lang="ru">RU</a>
+          </nav>
+        </div>
+        <div class="masthead-ornament"><span>✦</span></div>
+      </header>
+
+      <!-- Category strip -->
+      <nav id="contents-strip" class="contents-strip" aria-label="أقسام المنيو"></nav>
+
+      <!-- Search -->
+      <section id="filters-section"></section>
+
+      <!-- Menu -->
+      <main id="menu-container"></main>
+
+      <!-- B2B -->
+      <section id="b2b-section" style="display:none;"></section>
+
+      <!-- Partners / Distributors -->
+      <section id="partners-section" style="display:none;"></section>
+
+      <!-- Footer -->
+      <footer id="colophon">
+        <div id="address-block"></div>
+        <div id="social-links" class="social-links"></div>
+        <div class="footer-bottom">
+          <p class="footer-copy" id="footer-rights">© 2026 الفائدة — جميع الحقوق محفوظة | Powered by TechnoBeta</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- SVG Smoke & Burn Effect Filter -->
+  <svg class="svg-filters" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;pointer-events:none;">
+    <defs>
+      <filter id="smoked-burn" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Image lightbox -->
+  <div id="plate-overlay" class="plate-overlay" role="dialog" aria-modal="true">
+    <button class="plate-close" aria-label="إغلاق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+    <img id="plate-image" class="plate-image" src="" alt="">
+  </div>
+
+  <!-- Floating Order Bar -->
+  <!-- Floating Order Bar -->
+  <aside id="order-bar" class="order-bar" aria-label="شريط سلة الطلب" style="display:none;">
+    <div class="order-bar-content">
+      <div class="order-bar-summary">
+        <div class="order-cart-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+          </svg>
+          <span id="order-bar-badge" class="order-bar-badge">0</span>
+        </div>
+        <div class="order-bar-texts">
+          <span id="order-bar-count-label" class="order-bar-items-text">0 أصناف</span>
+          <span id="order-bar-total" class="order-bar-price">0 ج.م</span>
+        </div>
+      </div>
+      <div class="order-bar-actions">
+        <button type="button" id="btn-clear-order" class="btn-order-clear" aria-label="مسح الطلب" title="مسح الطلب">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+          </svg>
+          <span id="order-clear-text">مسح</span>
+        </button>
+        <button type="button" id="btn-open-order" class="btn-order-checkout">
+          <span id="order-checkout-text">إتمام الطلب</span>
+          <svg class="order-arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Order Modal: 58mm Vintage POS Thermal Receipt -->
+  <div id="order-modal" class="order-modal" role="dialog" aria-modal="true" aria-labelledby="receipt-brand-title" style="display:none;">
+    <div class="order-modal-backdrop"></div>
+    <div class="order-modal-card pos-receipt">
+      <div class="receipt-cut-top" aria-hidden="true"></div>
+
+      <!-- Receipt Header -->
+      <header class="receipt-header">
+        <button type="button" class="order-modal-close receipt-close-btn" aria-label="إغلاق">&times;</button>
+        <div class="receipt-stars" id="receipt-stars">*** AL-FAIDA • الفائدة ***</div>
+        <h3 id="receipt-brand-title" class="receipt-title">الفائدة — لحوم مدخنة فاخرة</h3>
+        <p class="receipt-sub" id="receipt-brand-sub">وصفات روسية أصيلة • صُنعت في مصر</p>
+        <div class="receipt-meta-grid">
+          <span id="receipt-meta-no">REC: #ALF-2026-01</span>
+          <span id="receipt-meta-date">DATE: 2026-10-04</span>
+        </div>
+        <div class="receipt-divider-dashed">--------------------------------------</div>
+      </header>
+
+      <div class="order-modal-body receipt-body">
+        <!-- Frame 1: Notice & Availability Tab -->
+        <section class="receipt-frame receipt-frame-notice" aria-labelledby="receipt-notice-tab">
+          <div class="receipt-frame-tab" id="receipt-notice-tab">⚠️ تنبيه الاستلام وتوافر الأصناف</div>
+          <div class="receipt-frame-body">
+            <p id="receipt-pickup-text" class="receipt-notice-p">الاستلام حاليًا من مقر الفرع مباشرةً (مدينة نصر) حسب توافر المنتجات في الفرع وقت الاستلام، لحين الإعلان عن توفر خدمة التوصيل للمنازل قريبًا.</p>
+          </div>
+        </section>
+
+        <!-- Frame 2: Ordered Items & Bill Tab -->
+        <section class="receipt-frame receipt-frame-items" aria-labelledby="receipt-items-tab">
+          <div class="receipt-frame-tab" id="receipt-items-tab">🛒 تفاصيل الأصناف والطلب</div>
+          <div class="receipt-frame-body">
+            <div class="receipt-table-header">
+              <span class="col-qty" id="col-head-qty">الكمية</span>
+              <span class="col-item" id="col-head-item">الصنف (½ كجم)</span>
+              <span class="col-price" id="col-head-price">المبلغ</span>
+            </div>
+            <div class="receipt-divider-dashed">--------------------------------------</div>
+
+            <!-- Receipt Items List -->
+            <div id="order-items-list" class="receipt-items-list">
+              <!-- Dynamically populated rows -->
+            </div>
+
+            <div class="receipt-divider-dashed">--------------------------------------</div>
+
+            <!-- Receipt Total Row -->
+            <div class="receipt-total-row">
+              <span id="receipt-total-label">المجموع الكلي:</span>
+              <span id="modal-total-amount" class="receipt-total-amount">0 ج.م</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Frame 3: Customer Details Tab -->
+        <section class="receipt-frame receipt-frame-customer" aria-labelledby="receipt-customer-tab">
+          <div class="receipt-frame-tab" id="receipt-customer-tab">👤 بيانات العميل للتواصل</div>
+          <div class="receipt-frame-body">
+            <form id="order-form" class="order-form receipt-form" onsubmit="return false;">
+              <div class="receipt-field">
+                <label for="order-cust-name" id="label-cust-name">الاسم الكريم: <span class="req">*</span></label>
+                <input type="text" id="order-cust-name" required placeholder="اكتب اسمك..." autocomplete="name">
+              </div>
+              <div class="receipt-field">
+                <label for="order-cust-phone" id="label-cust-phone">رقم الهاتف (اختياري):</label>
+                <input type="tel" id="order-cust-phone" placeholder="010xxxxxxxx" autocomplete="tel">
+              </div>
+              <div class="receipt-field">
+                <label for="order-cust-notes" id="label-cust-notes">العنوان أو أي ملاحظات:</label>
+                <textarea id="order-cust-notes" rows="2" placeholder="المنطقة أو أي تعليمات..."></textarea>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <!-- Receipt Footer / Send Button & Barcode -->
+      <footer class="order-modal-footer receipt-footer">
+        <button type="button" id="btn-submit-whatsapp" class="btn-whatsapp-order receipt-wa-btn">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+          </svg>
+          <span id="btn-submit-text">إرسال الطلب عبر واتساب</span>
+        </button>
+
+        <!-- Thank You Note -->
+        <div class="receipt-thanks-wrap" aria-hidden="true">
+          <div class="receipt-thanks" id="receipt-thanks-text">*** شكراً لزيارتكم • THANK YOU ***</div>
+        </div>
+      </footer>
+
+      <div class="receipt-cut-bottom" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- WhatsApp float -->
+  <a href="#" id="whatsapp-float" class="wax-seal"
+     target="_blank" rel="noopener" aria-label="اطلب عبر واتساب" style="display:none;">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
