@@ -1,7 +1,7 @@
 {
   "_generated_by": "Al-Faida Apps Script",
   "schema": 2,
-  "version": "2026-10-18T12:56:43.416Z",
+  "version": "2026-11-02T14:18:56.983Z",
   "settings": {
     "brand_name": {
       "ar": "الفائدة",
@@ -138,6 +138,15 @@
         "ru": "Замороженные продукты"
       },
       "image": "https://lh3.googleusercontent.com/d/1CxT6d_-XpoVo9-KfDlgQHm5BO6xjNzJE"
+    },
+    {
+      "id": "c_box",
+      "name": {
+        "ar": "بوكسات",
+        "en": "Boxes",
+        "ru": "Боксы"
+      },
+      "image": "https://lh3.googleusercontent.com/d/1bfdgOx-dEWeWqFTnLmxb3Y74FPG0Wbdo"
     }
   ],
   "items": [
@@ -322,6 +331,33 @@
       "old_price_per_kg": 825,
       "image": "",
       "badge": "new",
+      "available": true,
+      "tags": {
+        "halal": true,
+        "natural": true,
+        "soy_free": true,
+        "keto": true
+      }
+    },
+    {
+      "id": "i35",
+      "category_id": "c_box",
+      "name": {
+        "ar": "بوكس عائلة الفائدة",
+        "en": "Al-Faida Family Box",
+        "ru": "Семейный бокс Аль-Фаида"
+      },
+      "desc": {
+        "ar": "تشكيلة متنوعة تضم أكثر من 15 صنف، منتجات طبيعية بدون صويا أو جيلاتين أو محسنات طعم صناعية",
+        "en": "Assorted variety of over 15 items, all-natural products with no soy, gelatin, or artificial flavor enhancers",
+        "ru": "Разнообразный ассортимент из более чем 15 позиций: натуральные продукты без сои, желатина и искусственных усилителей вкуса"
+      },
+      "price_per_kg": null,
+      "price_half_kg": 2500,
+      "price_quarter_kg": null,
+      "old_price_per_kg": 2800,
+      "image": "",
+      "badge": "offer",
       "available": true,
       "tags": {
         "halal": true,
