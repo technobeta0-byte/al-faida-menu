@@ -1,7 +1,7 @@
 {
   "_generated_by": "Al-Faida Apps Script",
   "schema": 2,
-  "version": "2026-11-18T14:15:53.325Z",
+  "version": "2026-11-18T14:18:50.756Z",
   "settings": {
     "brand_name": {
       "ar": "الفائدة",
@@ -379,9 +379,9 @@
         "en": "",
         "ru": ""
       },
-      "price_per_kg": 1100,
-      "price_half_kg": 550,
-      "price_quarter_kg": 275,
+      "price_per_kg": 770,
+      "price_half_kg": 385,
+      "price_quarter_kg": 193,
       "old_price_per_kg": null,
       "image": "",
       "badge": "",
